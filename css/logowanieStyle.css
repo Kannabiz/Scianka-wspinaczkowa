@@ -1,0 +1,52 @@
+* {
+    font-family: Bahnschrift;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+#logContainer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#logContainer > h2 {
+    font-family: Bahnschrift;
+    font-size: 8vh;
+    margin: 7vh 0 4vh -20vh ;
+}
+#panelLogowania {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 58vh;
+    height: 36vh;
+    background-color: rgb(242, 84, 49);
+    margin: 20px;
+}
+#error {
+    margin-top: 3px;
+    color: white;
+}
+input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    padding: 0.25em 0.5em;
+    margin: 5px 0 5px 0;
+    background-color: white;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 100ms outline ease-in-out;
+}
+input:focus {
+    outline: 3px solid rgb(25, 66, 66);
+}
+input[type='submit']:hover {
+    outline: 3px solid rgb(25, 66, 66);
+    background-color: rgb(217, 237, 237);
+}

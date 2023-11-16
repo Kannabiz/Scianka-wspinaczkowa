@@ -1,0 +1,347 @@
+* {
+    margin: 0px;
+    backface-visibility: hidden;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+}
+
+/*-----------------------------------------*/
+/*                 GŁÓWNA                  */
+/*-----------------------------------------*/
+
+#naglowek {
+    position: sticky;
+    top: 0px;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+}
+
+#naglowek > #logo {
+    position: absolute;
+    left: 9%;
+    height: 80%;
+}
+
+#naglowek > #przyciskMenu {
+    position: absolute;
+    left: 3%;
+    height: 50%;
+}
+
+#slider {
+    height: 30vw;
+}
+
+#slider > img {
+    width: 100%;
+    height: 30vw;
+}
+
+#stopka {
+    display: flex;
+    align-items: center;
+    clear: both;
+    height: 7vw;
+    background-color: rgb(224, 224, 224);
+    font-family: Corbel;
+}
+
+#stopka > * {
+    margin: 40px;
+}
+
+/*-----------------------------------------*/
+/*               AKTUALNOŚCI               */
+/*-----------------------------------------*/
+
+#aktualnosci {
+    height: 115vw;
+    background-color: rgb(247, 247, 247);
+}
+
+#aktualnosci > h1 {
+    font-size: 4.8vw;
+    font-family: Bahnschrift;
+    margin-left: 30%;
+    padding-top: 30px;
+}
+
+.akt {
+    height: 19vw;
+    width: 40vw;
+    background-color: rgb(34, 84, 84);
+    font-family: Corbel;
+    margin: 15px 30% 15px 30%
+}
+
+.akt > h2 {
+    padding: 10px 0 0 10px;
+    font-size: 2.6vw;
+}
+
+.akt > p {
+    float: right;
+    width: 15vw;
+    margin-top: 20px;
+    font-size: 1.8vw;
+    margin-right: 10px;
+}
+
+.akt img {
+    width: 250px;
+    height: 170px;
+}
+
+/*-----------------------------------------*/
+/*           AKTUALNOŚCI - INFO            */
+/*-----------------------------------------*/
+
+#aktContainer, #container, #div_blur {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: backdrop-filter 0.8s;
+    pointer-events: none;
+}
+
+#aktContainer {
+    z-index: 1003;
+}
+
+#container {
+    z-index: 1000;
+    pointer-events: all;
+}
+
+#div_blur {
+    z-index: 1002;
+}
+
+.invis {
+    animation: ukrycie 0.6s ease;
+    opacity: 0%;
+}
+
+.invisT {
+    opacity: 0%;
+}
+
+.vis {
+    animation: pojawienie 0.6s ease;
+    pointer-events: all;
+}
+
+.info {
+    width: 60%;
+    height: 60%;
+    background-color: rgb(171, 211, 198);
+    position: absolute;
+}
+
+.przycisk {
+    position: absolute;
+    height: 2.5vw;
+    right: 4px;
+    top: 4px;
+    z-index: 1001;
+}
+
+.info > h2 {
+    font-family: Bahnschrift;
+    position: relative;
+    font-size: 6vh;
+    left: 5%;
+    top: 2%;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+.info > p {
+    font-family: Corbel;
+    position: relative;
+    width: 70%;
+    left: 5%;
+    font-size: 24px;
+}
+
+.info > .autor {
+    position: absolute;
+    width: 70%;
+    bottom: 10px;
+    font-size: 24px;
+    right: 75%;
+}
+
+@keyframes pojawienie {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes ukrycie {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+/*-----------------------------------------*/
+/*                   MENU                  */
+/*-----------------------------------------*/
+
+#menu {
+    width: 18%;
+    height: 100%;
+    background-color: rgb(131, 131, 131);
+    position: fixed;
+    top: 0;
+    transition: backdrop-filter 0.8s;
+    z-index: 2000;
+}
+
+#przyciskMenu, #przyciskMenu2, .przycisk, .akt {
+    cursor: pointer;
+}
+
+#przyciskMenu2 {
+    position: absolute;
+    padding: 3px;
+    width: 40px;
+    right: 12px;
+    top: 12px;
+}
+
+#menu > ul {
+    list-style-type: none;
+    position: relative;
+    top: 80px;
+}
+
+.linkLista {
+    width: 80%;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    border: 3px solid rgb(247, 247, 247);
+    border-radius: 4px;
+    margin:20px 0 10px 0;
+    font-family: Bahnschrift;
+    display: flex;
+    align-items: center;
+}
+
+.linkLista:hover {
+
+    background-color: rgb(223, 223, 223);
+    border: 3px solid rgb(236, 236, 236);
+}
+
+.linkLista *
+{
+    padding-left: 3%;
+    color: blue;
+}
+
+#linki a[href="oNas.php"] > div {
+    background-color: rgb(255, 231, 175);
+    border: 3px solid rgb(233, 210, 156);
+}
+
+#linki a[href="oNas.php"] > div:hover {
+    background-color: rgb(220, 193, 130);
+    border: 3px solid rgb(233, 210, 156);
+}
+
+#linki a[href="cennik.php"] > div {
+    background-color: rgb(168, 214, 255);
+    border: 3px solid rgb(146, 190, 229);
+}
+
+#linki a[href="cennik.php"] > div:hover {
+    background-color: rgb(124, 180, 228);
+    border: 3px solid rgb(146, 190, 229);
+}
+
+#linki a[href="logowanie.php"] > div {
+    background-color: rgb(255, 130, 102);
+    border: 3px solid rgb(222, 100, 72);
+}
+
+#linki a[href="logowanie.php"] > div:hover {
+    background-color: rgb(207, 99, 75);
+    border: 3px solid rgb(222, 100, 72);
+}
+
+#linki a[href="rejestracja.php"] > div {
+    background-color: rgb(163, 255, 124);
+    border: 3px solid rgb(124, 231, 78);
+}
+
+#linki a[href="rejestracja.php"] > div:hover {
+    background-color: rgb(108, 220, 61);
+    border: 3px solid rgb(124, 231, 78);
+}
+
+.tymczasowyStan {
+    will-change: transform;
+    transform: translate3d(-100%, 0px, 0px);
+    pointer-events: none;
+}
+
+.wjazd {
+    animation: wejście 0.5s ease-out;
+    pointer-events: all;
+}
+
+.wyjazd {
+    will-change: transform;
+    animation: wyjście 0.5s ease-in;
+    transform: translate3d(-100%, 0px, 0px);
+    pointer-events: none;
+}
+
+@keyframes wejście {
+    from {
+      transform: translate3d(-100%, 0px, 0px);
+    }
+    to {
+      transform: translate3d(0%, 0px, 0px);
+    }
+}
+
+@keyframes wyjście {
+    from {
+      transform: translate3d(0%, 0px, 0px);
+    }
+    to {
+      transform: translate3d(-100%, 0px, 0px);
+    }
+}
+

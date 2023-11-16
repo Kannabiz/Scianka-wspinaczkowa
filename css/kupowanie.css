@@ -1,0 +1,40 @@
+#kupowanieContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#kupowanieTab td {
+    padding: 5px;
+}
+
+#kupowanieTab tr {
+    background-color:azure;
+}
+
+#kupowanieTab tr:nth-child(2n) {
+    background-color: rgb(218, 238, 238);
+}
+
+#kupowanieTab th {
+    border: 1px solid black;
+}
+
+.iloscK {
+    width: 40px;
+}
+
+#kupowanieContainer h2 {
+    font-family: Bahnschrift;
+    font-size: 34px;
+    margin: 20px 0 20px 0;
+}
+
+#kupowanieForm input[type='submit']
+{
+    font-size: 13px;
+    margin-bottom: 30px;
+    float: right;
+    width: 100px;
+}

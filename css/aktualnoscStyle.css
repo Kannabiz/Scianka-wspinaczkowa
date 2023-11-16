@@ -1,0 +1,39 @@
+#aktCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+input[type='file']
+{
+    width: 180px;
+}
+#aktDodanie {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: rgb(218, 238, 238);
+}
+
+#aktLista {
+    margin-top: 50px;
+    padding: 30px 77px 30px 76px;
+    background-color: rgb(218, 238, 238);
+}
+.aktUsun {
+    text-align: center;
+}
+.aktUsun input {
+    display: inline-block;
+}
+
+#aktualnoscForm input[type='submit']
+{
+    font-size: 14px;
+    font-family: Corbel;
+    margin: 20px 0 30px 5px;
+    width: 100px;
+}
+
+#aktualnoscForm input[type='submit']:hover
+{
+    background-color: rgb(173, 205, 205);
+}

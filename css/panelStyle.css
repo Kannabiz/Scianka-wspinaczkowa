@@ -1,0 +1,100 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+textarea::-webkit-outer-spin-button,
+textarea::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+input {
+    font-size: 12px;
+    font-size: max(12px, 0.6em);
+    padding: 0.25em 0.5em;
+    margin: 5px 0 5px 0;
+    background-color: white;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 100ms outline ease-in-out;
+}
+input:focus {
+    outline: 3px solid rgb(25, 66, 66);
+}
+
+input[type='submit']:hover {
+    outline: 3px solid rgb(25, 66, 66);
+    background-color: rgb(217, 237, 237);
+}
+
+textarea:focus {
+    border-radius: 4px;
+    outline: 3px solid rgb(25, 66, 66);
+}
+
+#wszystkoContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#podmenu {
+    margin-top: 30px;
+    width: 80%;
+    height: 20%;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.zakladki {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Bahnschrift;
+}
+.zakladki:hover {
+    background-color: rgb(168, 168, 168);
+    cursor: pointer;
+}
+#zawartosc {
+    margin-top: 12px;
+    width: 80%;
+    min-height: 500px;
+    background-color: rgb(247, 247, 247);
+    font-family: Corbel;
+}
+.panel {
+    display: none;
+    height: max-content;
+}
+#panel1 {
+    display: contents;
+}
+#panel1 > * {
+    position: relative;
+    left: 6vw;
+    top: 5vh;
+}
+#panel1 > h1 {
+    font-family: Bahnschrift;
+    font-size: 50px;
+}
+#panel1 > h3 {
+    font-size: 45px;
+    margin-bottom: 200px;
+}
+#panel1 p {
+    font-size: 24px;
+}
+textarea {
+    resize: none;
+}

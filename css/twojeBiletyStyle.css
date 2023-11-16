@@ -1,0 +1,59 @@
+.bilety
+{
+    width: 50vw;
+    min-height: 200px;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+.mn {
+    font-size: 22px;
+}
+.wi {
+    font-size: 28px;
+}
+.id_uzytk
+{
+    position: absolute;
+}
+.akcept
+{
+    background-color: rgb(218, 238, 238);
+    width: 90px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.dane {
+    width: 40vw;
+    background-color: rgb(218, 238, 238);
+    min-height: 200px;
+    position: relative;
+    left: 100px;
+}
+.dane th {
+    border-bottom: 1px dashed black;
+}
+.dane th:nth-child(1) {
+    width: 32vw;
+}
+.dane td:nth-child(2), .dane td:nth-child(3) {
+    text-align: center;
+}
+#panelContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#potwierdzenieForm input[type='submit']
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+    float: right;
+    width: 100px;
+}

@@ -1,0 +1,71 @@
+*{
+    font-family: Bahnschrift;
+}
+
+#panelRejestracji, #promocja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(163, 255, 124);
+    padding: 10px;
+    margin: 20px;
+    width: 60vh;
+    height: 62vh;
+}
+#error {
+    color: white;
+}
+#promocja ul {
+    margin: 0;
+    padding: 0;
+}
+#reszta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    padding: 0.25em 0.5em;
+    margin: 5px 0 5px 0;
+    background-color: white;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 100ms outline ease-in-out;
+}
+input:focus {
+    outline: 3px solid rgb(25, 66, 66);
+}
+.g-recaptcha {
+    margin: 4px 0 0 0;
+}
+input[type='submit'] {
+    margin: 20px 0 0 0;
+}
+input[type='submit']:hover {
+    outline: 3px solid rgb(25, 66, 66);
+    background-color: rgb(217, 237, 237);
+}
+label {
+    margin-right: 6px;
+}
+table {
+    width: 58vh;
+}
+
+#promocja h2 {
+    font-size: 30px;
+}
+#promocja li {
+    font-size: 1.15vw;
+}
+#promocja p {
+    font-size: 1.25vw;
+}
+#promocja h3 {
+    font-size: 1.30vw;
+    margin-top: 20px;
+}

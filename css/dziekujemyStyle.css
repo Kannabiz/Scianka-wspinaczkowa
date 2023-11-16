@@ -1,0 +1,17 @@
+#dziek1,#dziek2,#dziek3,#dziek4 {
+    position: relative;
+    margin-left: 20px;
+}
+#dziek1 {
+    font-size: 40px;
+    margin: 20px 0 30px 20px;
+}
+#dziek2, #dziek3 {
+    font-size: 20px;
+}
+#dziek4[type='submit']
+{
+    font-size: 16px;
+    margin-top: 300px;
+    width: 150px;
+}

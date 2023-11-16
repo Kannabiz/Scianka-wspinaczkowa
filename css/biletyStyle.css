@@ -1,0 +1,32 @@
+#biletyCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#dodajBilet {
+    margin-top: 50px;
+    padding: 30px 80px 30px 80px;
+    background-color: rgb(218, 238, 238);
+}
+#listaBiletow {
+    margin-top: 50px;
+    padding: 30px 80px 30px 80px;
+    background-color: rgb(218, 238, 238);
+}
+#biletyForm input[type='submit']
+{
+    font-size: 14px;
+    font-family: Corbel;
+    margin: 20px 0 30px 5px;
+    width: 100px;
+}
+.aktUsun {
+    text-align: center;
+}
+.aktUsun input {
+    display: inline-block;
+}
+#biletyForm input[type='submit']:hover
+{
+    background-color: rgb(173, 205, 205);
+}

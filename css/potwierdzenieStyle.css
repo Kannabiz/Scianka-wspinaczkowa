@@ -1,0 +1,74 @@
+.bilety
+{
+    width: 50vw;
+    min-height: 200px;
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+.id_uzytk, .akcept, .usun
+{
+    background-color: rgb(218, 238, 238);
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+}
+.mn {
+    font-size: 22px;
+}
+.wi {
+    font-size: 28px;
+}
+.id_uzytk
+{
+    position: absolute;
+}
+.akcept
+{
+    position: absolute;
+    bottom: 0;
+}
+.dane {
+    width: 37vw;
+    background-color: rgb(218, 238, 238);
+    min-height: 200px;
+    position: relative;
+    left: 100px;
+    margin: 10px 10px 10px 0;
+}
+.usun {
+    position: absolute;
+    min-height: 200px;
+    right: -100px;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: wrap;
+}
+.usun input {
+    height: 20px;
+}
+.dane th {
+    border-bottom: 1px dashed black;
+}
+.dane th:nth-child(1) {
+    width: 29vw;
+}
+.dane td:nth-child(2), .dane td:nth-child(3) {
+    text-align: center;
+}
+#panelContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.potwierdzenieForm input[type='submit']
+{
+    font-size: 20px;
+    margin-bottom: 30px;
+    float: right;
+    width: 100px;
+}

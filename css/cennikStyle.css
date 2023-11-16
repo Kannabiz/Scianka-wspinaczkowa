@@ -1,0 +1,33 @@
+#biletyContainer {
+    width: 100%;
+    background-color: rgb(247,247,247);
+    padding: 0 0 10vh 0;
+}
+
+#biletyContainer > h2 {
+    font-family: Bahnschrift;
+    font-size: 8vh;
+    margin: 7vh 0 5vh 25% ;
+}
+
+.bilet {
+    height: 18vh;
+    width: 48vw;
+    background-color: rgb(168, 214, 255);
+    margin: 20px 25% 20px 25%;
+    font-family: Corbel;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+.nazwa {
+    width: 35.9vw;
+    border-right: 0.1vw solid black;
+    margin: 0 0.5vw 0 0.5vw;
+    height: 18vh;
+}
+.cena {
+    width: 10vw;
+    height: 18vh;
+    margin: 0 0 0 0.5vw;
+}

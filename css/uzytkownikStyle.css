@@ -1,0 +1,43 @@
+#uzytkCenter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#uzytkownicyForm {
+    margin-top: 40px;
+}
+#uzytkownicyTab td {
+    padding: 5px;
+}
+
+#uzytkownicyTab tr {
+    background-color:azure;
+}
+
+#uzytkownicyTab tr:nth-child(2n) {
+    background-color: rgb(218, 238, 238);
+}
+
+#uzytkownicyTab th {
+    border: 1px solid black;
+}
+
+.iloscK {
+    width: 40px;
+}
+
+#uzytkownicyTab h2 {
+    font-family: Bahnschrift;
+    font-size: 34px;
+    margin: 20px 0 20px 0;
+}
+
+#uzytkownicyForm input[type='submit']
+{
+    font-size: 14px;
+    font-family: Corbel;
+    margin-bottom: 30px;
+    float: right;
+    width: 100px;
+}
